@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="manifest" href="/manifest.json">
+
+<body>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => console.log('ServiceWorker registered'))
+          .catch(err => console.log('Error: ', err));
+      });
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Автошкола</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Автошкола "Konkord" </h1>
+        <nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="about.html">О нас</a></li>
+				<li><a href="auto.html">Автошкола</a></li>
+				<li><a href="moto.html">Мотошкола</a></li>
+				<li><a href="feedback.php">Отзывы</a></li>
+			</ul>
+		</nav>
+    </header>
+
+    <section>
+        <h2>Хотите стать успешным автолюбителем? - Добро пожаловать в нащу  автошколу!</h2>
+        <p>На нашем сайте вы сможете найти разлчиные программы обучения по многим категориям водительского удоствоерения.</p>
+        <p>Здесь будeт размещаться информация обо всех нововведениях и акицях и изменения в расписании занятий.</p>
+    </section>
+        
+	<section>
+		<img src="sc.jpg" alt="Наши автомобили" style="width: 500px; height: 300px;">
+	</section>
+		
+    <section>
+        <h3>Акции</h3>
+            <p>Программа обучения по категории B - 30 000р.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ООО "КОНКОРД"</p>
+    </footer>
+</body>
+</html>
