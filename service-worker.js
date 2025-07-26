@@ -6,8 +6,8 @@ const urlsToCache = [
   './auto.html',
   './moto.html',
   './style.css',
-  './icon-192x192.png',
-  './icon-512x512.png'
+  './icon-1800x1800.png',
+  './icon-900x900.png'
 ];
 
 self.addEventListener('install', event => {
